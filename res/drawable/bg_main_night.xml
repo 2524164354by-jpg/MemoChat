@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base dark gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#141416"
+                android:endColor="#1A1A20" />
+        </shape>
+    </item>
+
+    <!-- Green halo top-left -->
+    <item
+        android:width="360dp"
+        android:height="360dp"
+        android:gravity="top|start">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:startColor="#1407C160"
+                android:endColor="#0007C160" />
+        </shape>
+    </item>
+
+    <!-- Blue halo top-right -->
+    <item
+        android:width="320dp"
+        android:height="320dp"
+        android:gravity="top|end">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:startColor="#145B8DEF"
+                android:endColor="#005B8DEF" />
+        </shape>
+    </item>
+
+    <!-- Purple halo bottom-left -->
+    <item
+        android:width="340dp"
+        android:height="340dp"
+        android:gravity="bottom|start">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:startColor="#148E7CF0"
+                android:endColor="#008E7CF0" />
+        </shape>
+    </item>
+
+    <!-- Orange halo bottom-right -->
+    <item
+        android:width="300dp"
+        android:height="300dp"
+        android:gravity="bottom|end">
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:startColor="#10FF9F40"
+                android:endColor="#00FF9F40" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MemoChat" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/wx_green</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/wx_green_dark</item>
+        <item name="android:statusBarColor">@color/bar_bg</item>
+        <item name="android:navigationBarColor">@color/bar_bg</item>
+        <item name="android:windowBackground">@color/bg_chat</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorBackground">@color/bg_page</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="Theme.MemoChat.Transparent" parent="Theme.MemoChat">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- Settings row divider -->
+    <style name="Theme.MemoChat.NoActionBar" parent="Theme.MemoChat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="SettingsDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+    <style name="FabCircle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="DialogGlassAnim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+    <style name="Theme.MemoChat.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowAnimationStyle">@style/DialogGlassAnim</item>
+        <item name="android:windowBackground">@drawable/bg_glass_dialog</item>
+    </style>
+</resources>

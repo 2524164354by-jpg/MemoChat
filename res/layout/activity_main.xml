@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- iOS Liquid Glass bottom bar -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/bg_glass_bar"
+        android:elevation="18dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/nav_chat"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/tab_chat"
+            android:padding="18dp"
+            android:src="@drawable/ic_chat_bubble" />
+
+        <ImageView
+            android:id="@+id/nav_stats"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:contentDescription="star"
+            android:padding="18dp"
+            android:src="@drawable/ic_star" />
+
+        <ImageView
+            android:id="@+id/nav_star"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/tab_stats"
+            android:padding="18dp"
+            android:src="@drawable/ic_stats" />
+
+        <ImageView
+            android:id="@+id/nav_settings"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/tab_settings"
+            android:padding="18dp"
+            android:src="@drawable/ic_settings" />
+    </LinearLayout>
+
+    <!-- New entry FAB (chat list only) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="42dp"
+        android:contentDescription="@string/new_entry"
+        android:scaleType="fitCenter"
+        app:backgroundTint="@color/wx_green"
+        app:elevation="14dp"
+        app:hoveredFocusedTranslationZ="6dp"
+        app:rippleColor="#3307C160"
+        app:fabSize="auto"
+        app:shapeAppearanceOverlay="@style/FabCircle"
+        app:tint="#FFFFFF"
+        app:srcCompat="@drawable/ic_add" />
+
+</FrameLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="60dp"
+            android:paddingBottom="16dp"
+            android:scrollbars="none" />
+
+        <ImageButton
+            android:id="@+id/btnToBottom"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/bg_to_bottom"
+            android:elevation="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_down"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="top"
+            android:background="#F2F0F0F0">
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="4dp"
+                android:contentDescription="back"
+                android:padding="11dp"
+                android:src="@drawable/ic_back" />
+
+            <LinearLayout
+                android:id="@+id/title_wrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="52dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/text_primary"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/selection_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="48dp"
+            android:background="#F2F0F0F0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="12dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/selection_count"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="已选 0 条"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selection_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="删除"
+                android:textColor="#EF4444"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/backfill_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/backfill_pill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_backfill_pill"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/btn_back_to_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_backfill_action"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="5dp"
+            android:text="回到今日"
+            android:textColor="@color/wx_green"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/input_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_bar_bg"
+            android:elevation="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="8dp">
+
+            <ImageView
+                android:id="@+id/btn_calendar_left"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:contentDescription="选择日期"
+                android:padding="6dp"
+                android:src="@drawable/ic_calendar" />
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:background="@drawable/bg_input"
+                android:hint="@string/input_hint"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:imeOptions="actionSend"
+                android:maxLines="4"
+                android:minLines="1"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="9dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_tertiary"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/btn_emoji"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:contentDescription="emoji"
+                android:padding="6dp"
+                android:src="@drawable/ic_emoji" />
+
+            <ImageView
+                android:id="@+id/btn_plus"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:contentDescription="image"
+                android:padding="6dp"
+                android:src="@drawable/ic_image" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/emoji_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@drawable/bg_emoji"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/emoji_panel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp">
+
+                <ImageView
+                    android:id="@+id/btn_emoji_backspace"
+                    android:layout_width="44dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="删除"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_backspace" />
+
+                <TextView
+                    android:id="@+id/btn_emoji_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#07C160"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp"
+                    android:text="发送"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

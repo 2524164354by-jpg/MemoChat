@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bubble_self">#7ED957</color>
+    <color name="bubble_white">#2C2C2C</color>
+    <color name="bg_page">#1A1A1A</color>
+    <color name="bg_chat">#1A1A1A</color>
+    <color name="bar_bg">#1A1A1A</color>
+    <color name="text_primary">#F2F2F2</color>
+    <color name="text_secondary">#98989F</color>
+    <color name="text_tertiary">#636366</color>
+    <color name="divider">#2C2C2C</color>
+    <color name="glass">#B32C2C2E</color>
+    <color name="glass_stroke">#26111111</color>
+    <color name="card_bg">#2C2C2C</color>
+    <color name="card_stroke">#26FFFFFF</color>
+    <color name="input_bg">#2C2C2C</color>
+    <color name="item_pressed">#3A3A3C</color>
+    <color name="tag_bg">#FFFFFF14</color>
+    <color name="fab_shadow">#66000000</color>
+    <color name="on_self_bubble">#111111</color>
+    <color name="on_white_bubble">#F2F2F2</color>
+</resources>

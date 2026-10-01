@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- White chat bubble + small dots inside, centered within 66/108 safe zone -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M54,26c-16.57,0 -30,11.64 -30,26c0,7.2 3.72,13.68 9.7,17.88c-0.32,2.6 -1.6,6.28 -4.2,9.12c0.52,0.08 4.3,0.5 7.7,-1.6c1.18,-0.72 2.3,-1.7 3.3,-2.7c4.4,1.4 8.9,2.1 13.5,2.1c16.57,0 30,-11.64 30,-26S70.57,26 54,26z" />
+    <path android:fillColor="#07C160"
+        android:pathData="M40,44a3.5,3.5 0 1 1 0,7a3.5,3.5 0 1 1 0,-7zM54,44a3.5,3.5 0 1 1 0,7a3.5,3.5 0 1 1 0,-7zM68,44a3.5,3.5 0 1 1 0,7a3.5,3.5 0 1 1 0,-7z" />
+</vector>

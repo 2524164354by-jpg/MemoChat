@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- White/other bubble: tail at bottom-left -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="64dp"
+    android:viewportWidth="240"
+    android:viewportHeight="128">
+    <path
+        android:fillColor="@color/bubble_white"
+        android:pathData="M16,8 L212,8 A16,16 0 0 1 228,24 L228,96 A16,16 0 0 1 212,112 L48,112 L2,140 L16,112 A16,16 0 0 1 0,96 L0,24 A16,16 0 0 1 16,8 Z" />
+</vector>

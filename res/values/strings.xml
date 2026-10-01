@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">微记</string>
+
+    <!-- Tabs (icons only) -->
+    <string name="tab_chat">气泡</string>
+    <string name="tab_filter">筛选</string>
+    <string name="tab_stats">统计</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- Chat list -->
+    <string name="chat_list_title">微记</string>
+    <string name="new_entry">新建条目</string>
+    <string name="entry_title_hint">标题 / 备注</string>
+    <string name="entry_date_label">日期</string>
+    <string name="entry_weather_label">天气</string>
+    <string name="entry_mood_label">心情</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="no_entries">还没有条目\n点右下角 + 新建一条吧</string>
+
+    <!-- Chat detail -->
+    <string name="empty_chat_hint">写点什么，记录今天吧</string>
+    <string name="input_hint">输入文字…</string>
+    <string name="send">发送</string>
+
+    <!-- Filter -->
+    <string name="filter_title">筛选</string>
+    <string name="filter_by_date">按日期</string>
+    <string name="filter_by_mood">按心情</string>
+    <string name="filter_by_weather">按天气</string>
+    <string name="filter_by_keyword">关键词</string>
+    <string name="filter_search_hint">搜索关键词…</string>
+    <string name="filter_no_result">没有符合条件的条目</string>
+
+    <!-- Settings -->
+    <string name="settings_title">设置</string>
+    <string name="settings_avatar">头像</string>
+    <string name="settings_appearance">外观</string>
+    <string name="settings_dark_mode">深色模式</string>
+    <string name="settings_light_mode">浅色模式</string>
+    <string name="settings_auto_mode">跟随系统</string>
+    <string name="settings_bg">聊天背景</string>
+    <string name="settings_bg_default">默认</string>
+    <string name="settings_bg_custom">自定义图片</string>
+    <string name="settings_version">检查更新</string>
+    <string name="settings_about">版本</string>
+    <string name="settings_clear">清除数据</string>
+    <string name="settings_clear_desc">删除所有条目与消息</string>
+    <string name="version_current">当前已是最新版本 v1.0.0</string>
+    <string name="avatar_pick">选择头像</string>
+    <string name="bg_pick">选择聊天背景</string>
+
+    <!-- Permissions -->
+    <string name="perm_gallery_title">需要相册权限</string>
+    <string name="perm_gallery_msg">需要访问相册来选择头像、发送图片与设置聊天背景</string>
+    <string name="perm_go_settings">去设置</string>
+
+    <!-- Weather / mood options -->
+    <string name="mood_happy">开心</string>
+    <string name="mood_calm">平静</string>
+    <string name="mood_tired">疲惫</string>
+    <string name="mood_sad">难过</string>
+    <string name="mood_excited">兴奋</string>
+    <string name="mood_angry">生气</string>
+    <string name="weather_sunny">晴</string>
+    <string name="weather_cloudy">多云</string>
+    <string name="weather_overcast">阴</string>
+    <string name="weather_rain">雨</string>
+    <string name="weather_snow">雪</string>
+    <string name="weather_fog">雾</string>
+</resources>

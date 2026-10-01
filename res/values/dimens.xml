@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bar_height">44dp</dimen>
+    <dimen name="glass_bar_height">64dp</dimen>
+    <dimen name="glass_bar_margin">16dp</dimen>
+    <dimen name="glass_bar_radius">34dp</dimen>
+    <dimen name="bubble_corner">14dp</dimen>
+    <dimen name="avatar_size">40dp</dimen>
+    <dimen name="avatar_size_big">56dp</dimen>
+    <dimen name="item_padding_h">16dp</dimen>
+    <dimen name="msg_margin">8dp</dimen>
+</resources>

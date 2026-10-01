@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.MemoChat" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/wx_green</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">@color/wx_green_dark</item>
+        <item name="android:statusBarColor">@color/bar_bg</item>
+        <item name="android:navigationBarColor">@color/bar_bg</item>
+        <item name="android:windowBackground">@color/bg_chat</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:colorBackground">@color/bg_page</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_tertiary</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="Theme.MemoChat.Transparent" parent="Theme.MemoChat">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="SettingsDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+</resources>
